@@ -11,7 +11,16 @@ app.get('/', (req, res) => {
 
 // נתיב שמחזיר את רשימת ההצעות חוק
 app.get('/api/bills', (req, res) => {
-  res.json(bills);
+  const { subject } = req.query;
+
+  if (subject) {
+    const filtered = bills.filter(bill =>
+      bill.subjects.includes(subject.toLowerCase())
+    );
+    res.json(filtered);
+  } else {
+    res.json(bills);
+  }
 });
 
 app.listen(PORT, () => {
