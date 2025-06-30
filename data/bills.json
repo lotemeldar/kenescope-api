@@ -1,0 +1,16 @@
+[
+  {
+    "id": "B2048",
+    "title": "Mandatory civic studies in high school",
+    "status": "In Committee",
+    "subjects": ["education", "civics"],
+    "sponsored_by": ["MK Yael Cohen-Paran"]
+  },
+  {
+    "id": "B2049",
+    "title": "Regulation of facial recognition cameras",
+    "status": "Plenum 1st Reading",
+    "subjects": ["privacy", "security"],
+    "sponsored_by": ["MK David Bitan"]
+  }
+]
